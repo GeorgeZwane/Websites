@@ -1,0 +1,231 @@
+/* Reset and default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7), #f61414);
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    height: 80px;
+    width: 70%;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .header .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+/* Cart styling */
+.cart {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #ff6f61;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+    .cart:hover {
+        background-color: #ff3b2d;
+    }
+
+    .cart .fa-shopping-bag {
+        color: #fff;
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .cart #count {
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+/* Icon styling */
+.fa-solid {
+    font-size: 20px;
+}
+
+/* Utility classes */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.bg-primary {
+    background-color: #ff6f61;
+}
+
+.bg-secondary {
+    background-color: #333;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* Container for products */
+.container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Product card styling */
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+}
+
+    .product img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+.product-info {
+    padding: 15px;
+}
+
+    .product-info h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .product-info p {
+        font-size: 18px;
+        color: #ff6f61;
+        margin-bottom: 15px;
+    }
+
+    .product-info .add-to-cart {
+        background-color: #ff6f61;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .product-info .add-to-cart:hover {
+            background-color: #ff3b2d;
+        }
+
+
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: red;
+    background-color: darkred;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+#cartItems {
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+    .cart-item button {
+        background-color: #ff6f61;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .cart-item button:hover {
+            background-color: #ff3b2d;
+        }
+
+
+#confirmButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    #confirmButton:hover {
+        background-color: #218838;
+    }

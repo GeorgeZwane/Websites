@@ -1,0 +1,587 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Chiller;
+}
+
+/* Header section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7), #f61414), url('images/prateek-katyal-MGRv3qZfyTs-unsplash.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+    nav img {
+        width: 100px;
+        height: 100px; /* Ensure the height and width are the same */
+        border-radius: 50%; /* Make the image circular */
+        object-fit: cover; /* Ensure the image covers the entire area */
+    }
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+    .nav-links ul {
+        list-style: none;
+    }
+
+        .nav-links ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+            .nav-links ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                transition: color 0.3s ease;
+            }
+
+                .nav-links ul li a:hover {
+                    color: #f61414;
+                }
+
+nav .bi {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        text-align: center;
+    }
+
+        .nav-links ul li {
+           
+            display: block;
+            margin: 10px 0;
+        }
+
+    .nav-links{
+        position:absolute;
+        background:#f61414;
+        height: 90vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index:2;
+    }
+
+    nav .bi {
+        display: block;
+        color:#000000;
+        margin: 10px;
+        cursor:pointer;
+
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+}
+
+.major-mono-display-regular {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jacquard-12-regular {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-box{
+    width:90%;
+    color:cornsilk;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 21px;
+    color:antiquewhite;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .custom-button:hover {
+        background-color: #0056b3;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------- gallary -----------*/
+
+
+.gallary{
+    width:80%;
+    margin: auto;
+    text-align:center;
+    padding-top:100px;
+
+}
+h1{
+    font-size:35px;
+    font-weight:600;
+}
+
+p{
+    color:#000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.gallary-col {
+    flex-basis: 31%;
+    background: #f61414;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+h3{
+    text-align:center;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.gallary-col:hover{
+   box-shadow: 0 0 20px 0px rgb(0, 0, 0,0.5)
+
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+
+}
+
+/*----------- Ambassodors -----------*/
+
+.ambassodors {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ambassodors-col {
+    flex-basis: 31%;
+    background: #f61414;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.ambassodors-col img {
+    width: 100%;
+}
+
+
+.ambassodors-col:hover {
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0,0.5)
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.layer{
+    background:#007BFF;
+    height:50%;
+    width: 20%;
+
+}
+
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col {
+    flex-basis: 31%;
+    background: linear-gradient(rgba(255, 0, 0, 0.7), #f61414);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.testimonials-col img{
+    height: 40px;
+    margin-left:5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p{
+    padding: 0;
+
+ }
+
+.testimonials-col h3 {
+    margin-top: 15px;
+    text-align: left;
+ }
+
+    .testimonials-col:hover {
+        box-shadow: 0 0 20px 0px rgb(0, 0, 0,0.5)
+    }
+
+@media(max-width: 700px) {
+    .testimonials-col img {
+        height: 40px;
+        margin-left: 0px;
+        margin-right: 30px;
+        border-radius: 50%;
+    }
+
+}
+
+/*----------- Contact us page -----------*/
+
+.cta {
+    margin: 80px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7), #f61414), url('images/prateek-katyal-MGRv3qZfyTs-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.cta h1{
+    color:antiquewhite;
+    margin-bottom:40px;
+    padding: 0;
+}
+
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+    .map h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+/*----------- footer -----------*/
+
+.footer{
+    width:100%;
+    text-align:center;
+    padding: 30px 0;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 35px;
+
+}
+
+    .footer p1 {
+        font-size: 21px;
+    }
+
+    .icons .bi {
+        color: rgba(255, 106, 0, 0.7);
+        cursor: pointer;
+        margin: 0 13px;
+    }
+
+
+
+
+.sub-header {
+    height: 25vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7), #f61414), url('images/prateek-katyal-MGRv3qZfyTs-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sub-header h1 {
+    margin:auto;
+}
+
+
+.abt-us{
+    width: 80%;
+    margin:auto;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+.abt-col{
+    flex-basis:48%;
+    padding:15px 2px;
+}
+
+.abt-col p1{
+    font-size: 21px;
+}
+
+.abt-col img{
+    width:100%;
+}
+
+.custom-button{
+    background: transparent;
+    border: 1px solid rgba(255, 106, 0, 0.8);
+    color:coral;
+}
+
+.custom-button:hover {
+    background:#f0a500;
+    border: 1px solid coral;
+    color: #000000;
+}
+
+
+
+/*----------- blog content -----------*/
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.blog-left{
+    flex-basis: 10%;
+}
+
+.blog-left img{
+    width: 70%;
+}
+
+    .blog-left h2 {
+        color: #ff6a00;
+        font-weight: 600;
+        margin: 30px 0;
+    }
+
+.blog-left p{
+    font-size: 22px;
+    padding: 0;
+}
+
+.blog-right {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: background color for better visibility */
+    border: 2px solid #ddd; /* Optional: border for better visibility */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+}
+
+    .blog-right h3 {
+        margin-top: 0;
+    }
+
+    .blog-right div {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+
+@media (max-width: 600px) {
+    .blog-right {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin: 10px;
+        box-shadow: none;
+    }
+}
+
+.comment-box {
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: 20px auto; /* Center the box with margin */
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for the box */
+    border: 1px solid #ddd; /* Border for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    border-radius: 8px; /* Rounded corners */
+}
+
+    .comment-box h3 {
+        margin-top: 0;
+        font-size: 1.5em;
+        text-align: center;
+        color: #333;
+    }
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .comment-form input[type="text"],
+    .comment-form input[type="email"],
+    .comment-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px; /* Rounded corners for inputs */
+        font-size: 1em;
+    }
+
+    .comment-form textarea {
+        resize: vertical; /* Allow vertical resizing */
+    }
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF; /* Button background color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition effect for background color */
+}
+
+    .custom-button:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+    }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .comment-box {
+        padding: 15px;
+    }
+
+    .custom-button {
+        padding: 10px;
+    }
+}
+
+
+/*----------- contact page -----------*/
+location{
+    width:80px;
+    margin:auto;
+    padding:80px 0;
+}
+
+.location iframe{
+    width: 100%;
+
+}
+
+
+
